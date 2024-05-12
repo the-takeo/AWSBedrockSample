@@ -16,17 +16,17 @@ Because I excluded `Credentials.cs`, you should add following class.
         internal class Credentials
         {
             // クレデンシャルを明示的に指定。
-            // stakedaのIAMのアクセスキー。
+            // IAMのアクセスキー。
             // これは外部には絶対に公開しないこと。
             public static readonly BasicAWSCredentials Credential = new("XXXXXXXXXXXXXXXXXXXX", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
         }
         internal static class AgentInfo
         {
-            // SactonaSupportのAgentID
+            // AgentID
             // これは外部には絶対に公開しないこと。
             public static readonly string AgentId = "XXXXXXXXXX";
     
-            // SactonaSupportのAgentAliasID
+            // AgentAliasID
             // これは外部には絶対に公開しないこと。
             public static readonly string AgentAliasId = "XXXXXXXXXX";
         }
